@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nice.mapper.ArticleMapper">
+    <select id="queryArticleAll" resultType="com.nice.model.Article">
+        SELECT article_id,article_title,article_type,article_date,article_content,article_author,article_click_rate from article;
+    </select>
+</mapper>
